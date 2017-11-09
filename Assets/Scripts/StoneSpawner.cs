@@ -15,16 +15,18 @@ public class StoneSpawner : MonoBehaviour
     public float factor;
     public Rigidbody stonePrefab;
     public Camera c;
+    private float prevAccel;
     void Start()
     {
         //Debug.Log("StoneSpawner initialized.");
+        prevAccel = 0;
     }
 
-    void Update()
+    public float getPrevAccel()
     {
-        
-
+        return prevAccel;
     }
+
     public void spawn(float power)
     {
         Rigidbody rb = Instantiate(stonePrefab);
@@ -42,6 +44,7 @@ public class StoneSpawner : MonoBehaviour
         float accel;
         float.TryParse(message.GetField("accel"), out accel);
         spawn(accel);
+        prevAccel = accel;
         
 
         //int count = 0;
