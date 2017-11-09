@@ -341,6 +341,11 @@ Prefab:
       propertyPath: c
       value: 
       objectReference: {fileID: 909090822}
+    - target: {fileID: 114981573554091054, guid: 2cc16186dbb7cbb4cbded22a3d6b027c,
+        type: 2}
+      propertyPath: factor
+      value: 800
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2cc16186dbb7cbb4cbded22a3d6b027c, type: 2}
   m_IsPrefabParent: 0
@@ -658,6 +663,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1053275867}
+--- !u!82 &1067867392 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82776176633024112, guid: d8146150e16620c46a7e88d227971fb4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1363099840}
 --- !u!1 &1307823044
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +889,21 @@ Prefab:
       propertyPath: m_Url
       value: http://pages.cpsc.ucalgary.ca/~myshung/mountainlake.mp4
       objectReference: {fileID: 0}
+    - target: {fileID: 328488241303373860, guid: d8146150e16620c46a7e88d227971fb4,
+        type: 2}
+      propertyPath: m_TargetAudioSources.Array.data[0]
+      value: 
+      objectReference: {fileID: 1067867392}
+    - target: {fileID: 82776176633024112, guid: d8146150e16620c46a7e88d227971fb4,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82776176633024112, guid: d8146150e16620c46a7e88d227971fb4,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8146150e16620c46a7e88d227971fb4, type: 2}
   m_IsPrefabParent: 0
@@ -1042,6 +1067,7 @@ GameObject:
   - component: {fileID: 1588381335}
   - component: {fileID: 1588381334}
   - component: {fileID: 1588381338}
+  - component: {fileID: 1588381339}
   m_Layer: 0
   m_Name: WaterSurface
   m_TagString: Surface
@@ -1132,6 +1158,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1588381339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1588381333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52a897bf121b30d49a729abace046046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ripple: {fileID: 1199164458756376, guid: 9b11f8e6b1493ff4da116accc3e6308a, type: 2}
 --- !u!1 &1836705625 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1075043017736408, guid: 2cc16186dbb7cbb4cbded22a3d6b027c,

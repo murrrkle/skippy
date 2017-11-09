@@ -12,13 +12,11 @@ public class FlatStoneBehaviour : MonoBehaviour {
 
     private int baseBounces;
     private int bounces;
-    public GameObject ripple;
 
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
-        ripple = GetComponent<GameObject>();
-        decay = 0.9f;
+        decay = 0.95f;
         manager = GameObject.FindObjectOfType<StoneSpawner>();
         lastVelocity = rb.velocity;
         bounces = 100;
@@ -48,9 +46,6 @@ public class FlatStoneBehaviour : MonoBehaviour {
             bounces = Mathf.Abs(baseBounces - Mathf.FloorToInt(highestYVel));
         }
         */
-        Vector3 pos = collision.transform.position;
-        GameObject ps = Instantiate(ripple);
-        ps.transform.position = new Vector3(pos.x, -5, pos.y);
 
         if (bounces == 100)
         {
@@ -62,7 +57,7 @@ public class FlatStoneBehaviour : MonoBehaviour {
         if (collision.gameObject.CompareTag("Surface"))
         {
             float vertVel = Mathf.Abs(lastVelocity.y);
-            rb.AddForce(0, vertVel * decay * 50, 0);
+            rb.AddForce(0, vertVel * decay * 70, 0);
             bounces -= 1;
 
 
