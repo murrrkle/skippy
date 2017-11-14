@@ -38,7 +38,8 @@ public class StoneSpawner : MonoBehaviour
         {
             float accel;
             float.TryParse(message.GetField("accel"), out accel);
-            Spawn(accel);
+            if (prevAccel != accel)
+                Spawn(accel);
             prevAccel = accel;
         }
     }
