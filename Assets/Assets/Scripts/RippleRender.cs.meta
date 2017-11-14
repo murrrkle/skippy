@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 52a897bf121b30d49a729abace046046
+timeCreated: 1510653588
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ripple: {fileID: 1199164458756376, guid: 9b11f8e6b1493ff4da116accc3e6308a, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2cb49a39f20eba84ca0f28825b93525d
+timeCreated: 1510653574
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - stoneManager: {fileID: 114981573554091054, guid: 2cc16186dbb7cbb4cbded22a3d6b027c,
+      type: 2}
+  - flowerManager: {fileID: 114978381444631454, guid: 47b8c76c3989016428193661a08eb308,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
